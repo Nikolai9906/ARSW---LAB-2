@@ -5,6 +5,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.applet.*;
@@ -49,6 +50,7 @@ public class Main  extends Applet {
 		for (int i=0;i<nHilos;i++) {
 			hilos.get(i).suspend();
 		}
+
 	}
 	public static void Iniciar() throws InterruptedException {
 
@@ -56,6 +58,7 @@ public class Main  extends Applet {
 			hilos.get(i).resume();
 
 		}
+
 	}
 	public static TimerTask tiempoEjecucion() {
 
@@ -68,24 +71,16 @@ public class Main  extends Applet {
 				if (count == 5) {
 					try {
 						Detener();
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
-
-				}
-				if (count == 10) {
-					try {
+						Scanner Linea = new Scanner(System.in);
+						Linea.nextLine();
 						Iniciar();
-						cancel();
+						
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
 
 				}
 				count+=1;
-
-
-
 			}
 		};
 
