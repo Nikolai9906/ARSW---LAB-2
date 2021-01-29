@@ -74,7 +74,7 @@ public class Main  extends Applet {
 						Scanner Linea = new Scanner(System.in);
 						Linea.nextLine();
 						Iniciar();
-						
+
 					} catch (InterruptedException e) {
 						e.printStackTrace();
 					}
