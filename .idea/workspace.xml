@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ba1407e-4f48-456e-a104-b0aa0bf60098" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/parte1-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/parte1-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/parte2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parte1/src/main/java/edu/eci/arsw/primefinder/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/parte1/src/main/java/edu/eci/arsw/primefinder/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parte2/src/main/java/arsw/threads/Galgo.java" beforeDir="false" afterPath="$PROJECT_DIR$/parte2/src/main/java/arsw/threads/Galgo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parte2/src/main/java/arsw/threads/MainCanodromo.java" beforeDir="false" afterPath="$PROJECT_DIR$/parte2/src/main/java/arsw/threads/MainCanodromo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,15 +42,19 @@
     </option>
   </component>
   <component name="ProjectId" id="1nhJf6fxFylNiyxFb5WUxwDucBd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.MainCanodromo">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="edu.eci.arsw.primefinder.Main" />
       <module name="primesearch" />
@@ -63,12 +83,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainCanodromo" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MainCanodromo" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4ba1407e-4f48-456e-a104-b0aa0bf60098" name="Default Changelist" comment="" />
@@ -79,27 +102,45 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser" timestamp="1611840760404">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="488" y="90" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1611840760404" />
-    <state width="1323" height="141" key="GridCell.Tab.0.bottom" timestamp="1611888301264">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1799" height="294" key="GridCell.Tab.0.bottom" timestamp="1611889495340">
+      <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1611888301264" />
-    <state width="1323" height="141" key="GridCell.Tab.0.center" timestamp="1611888301264">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1799" height="294" key="GridCell.Tab.0.bottom/0.0.1842.1080@0.0.1842.1080" timestamp="1611889495340" />
+    <state width="1799" height="294" key="GridCell.Tab.0.center" timestamp="1611889495339">
+      <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1611888301264" />
-    <state width="1323" height="141" key="GridCell.Tab.0.left" timestamp="1611888301264">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1799" height="294" key="GridCell.Tab.0.center/0.0.1842.1080@0.0.1842.1080" timestamp="1611889495339" />
+    <state width="1799" height="294" key="GridCell.Tab.0.left" timestamp="1611889495338">
+      <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1611888301264" />
-    <state width="1323" height="141" key="GridCell.Tab.0.right" timestamp="1611888301264">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state width="1799" height="294" key="GridCell.Tab.0.left/0.0.1842.1080@0.0.1842.1080" timestamp="1611889495338" />
+    <state width="1799" height="294" key="GridCell.Tab.0.right" timestamp="1611889495339">
+      <screen x="0" y="0" width="1842" height="1080" />
     </state>
     <state width="1323" height="141" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1611888301264" />
+    <state width="1799" height="294" key="GridCell.Tab.0.right/0.0.1842.1080@0.0.1842.1080" timestamp="1611889495339" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1611846226936">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

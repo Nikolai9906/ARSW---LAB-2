@@ -1,6 +1,6 @@
 
 ### Escuela Colombiana de Ingeniería
-
+### Nikolai Bermudez Vega - Verbo Julian Camacho
 ### Arquitecturas de Software – ARSW
 ## Laboratorio Programación concurrente, condiciones de carrera, esquemas de sincronización, colecciones sincronizadas y concurrentes - Caso Dogs Race
 
@@ -13,9 +13,11 @@ Antes de terminar la clase.
 Creación, puesta en marcha y coordinación de hilos.
 
 1. Revise el programa “primos concurrentes” (en la carpeta parte1), dispuesto en el paquete edu.eci.arsw.primefinder. Este es un programa que calcula los números primos entre dos intervalos, distribuyendo la búsqueda de los mismos entre hilos independientes. Por ahora, tiene un único hilo de ejecución que busca los primos entre 0 y 30.000.000. Ejecútelo, abra el administrador de procesos del sistema operativo, y verifique cuantos núcleos son usados por el mismo.
-
+![](./img/parte1-1.jpg)
+>Se puede ver en l imagen que al ejecutar el programa y abrir el administrador podemos observar como al tener un unico hilo se ve el porcentaje de uso es aproximadamente de 41%
 2. Modifique el programa para que, en lugar de resolver el problema con un solo hilo, lo haga con tres, donde cada uno de éstos hará la tarcera parte del problema original. Verifique nuevamente el funcionamiento, y nuevamente revise el uso de los núcleos del equipo.
-
+![](./img/parte1-2.jpg)
+>Se puede ver en la imagen que al ejecutar mas hilos usa mas nucleos en un menor tiempo, siendo un pocentaje mucho mayor casi siendo 56%
 3. Lo que se le ha pedido es: debe modificar la aplicación de manera que cuando hayan transcurrido 5 segundos desde que se inició la ejecución, se detengan todos los hilos y se muestre el número de primos encontrados hasta el momento. Luego, se debe esperar a que el usuario presione ENTER para reanudar la ejecución de los mismo.
 
 
@@ -37,6 +39,8 @@ RegistroLLegada. Cuando un galgo llega a la meta, accede al contador ubicado en 
 logre tomar el ‘1’ será el ganador.
 
 Al iniciar la aplicación, hay un primer error evidente: los resultados (total recorrido y número del galgo ganador) son mostrados antes de que finalice la carrera como tal. Sin embargo, es posible que una vez corregido esto, haya más inconsistencias causadas por la presencia de condiciones de carrera.
+![](./img/parte2.jpg)
+>Se corrigio el error donde el ganador se mostraba antes de finalizar la carrera, ahora muestra el verdadero ganador despues de la carrera.
 
 Parte III
 
