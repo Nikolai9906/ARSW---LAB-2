@@ -52,12 +52,45 @@ Parte III
 
     b.  Puede utilizarse el método join() de la clase Thread para sincronizar el hilo que inicia la carrera, con la finalización de los hilos de los galgos.
 
+```java
+
+new Thread() {
+public void run() {
+        for (int i = 0; i < can.getNumCarriles(); i++) {
+        //crea los hilos 'galgos'
+        galgos[i] = new Galgo(can.getCarril(i), "" + i, reg);
+        //inicia los hilos
+        galgos[i].start();
+        }
+        for (int i = 0; i < can.getNumCarriles()+1; i++) {
+        try {
+        if(i<can.getNumCarriles()){
+            galgos[i].join();
+        }else{
+        can.winnerDialog(reg.getGanador(),reg.getUltimaPosicionAlcanzada()-1);
+        System.out.println("El ganador fue:" + reg.getGanador());
+        }
+
+        } catch (InterruptedException interruptedException) {
+        interruptedException.printStackTrace();
+        }
+
+
+        }
+
+        }
+
+        }.start();
+```
+
 2.  Una vez corregido el problema inicial, corra la aplicación varias
     veces, e identifique las inconsistencias en los resultados de las
     mismas viendo el ‘ranking’ mostrado en consola (algunas veces
     podrían salir resultados válidos, pero en otros se pueden presentar
     dichas inconsistencias). A partir de esto, identifique las regiones
     críticas () del programa.
+    
+>Encontramos inconsistencias en varios resultados como el de primer lugar, ya que salía más de un jugador como si tuvieran el 1 puesto. Para esto utilizamos *syncronized()* organizando cada hilo para que cada uno de ellos sepa su respectivo resultado.
 
 3.  Utilice un mecanismo de sincronización para garantizar que a dichas
     regiones críticas sólo acceda un hilo a la vez. Verifique los
@@ -67,4 +100,36 @@ Parte III
     cuando se haga clic en ‘Stop’, todos los hilos de los galgos
     deberían dormirse, y cuando se haga clic en ‘Continue’ los mismos
     deberían despertarse y continuar con la carrera. Diseñe una solución que permita hacer esto utilizando los mecanismos de sincronización con las primitivas de los Locks provistos por el lenguaje (wait y notifyAll).
+##Programa pausado - stop()
 
+![](./img/parte3-3.jpg)
+
+##Programa reanudado - continue()
+
+![](./img/parte3-3.1.jpg)
+
+###Salida
+```java
+        Carrera pausada!
+        Carrera reanudada!
+        Carrera pausada!
+        Carrera reanudada!
+        El galgo 15 llego en la posicion 2
+        El galgo 6 llego en la posicion 13
+        El galgo 16 llego en la posicion 10
+        El galgo 11 llego en la posicion 11
+        El galgo 4 llego en la posicion 12
+        El galgo 9 llego en la posicion 9
+        El galgo 13 llego en la posicion 8
+        El galgo 0 llego en la posicion 1
+        El galgo 12 llego en la posicion 7
+        El galgo 2 llego en la posicion 3
+        El galgo 8 llego en la posicion 6
+        El galgo 10 llego en la posicion 5
+        El galgo 3 llego en la posicion 4
+        El galgo 5 llego en la posicion 17
+        El galgo 14 llego en la posicion 16
+        El galgo 1 llego en la posicion 15
+        El galgo 7 llego en la posicion 14
+        El ganador fue:0
+```
