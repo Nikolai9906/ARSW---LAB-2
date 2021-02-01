@@ -100,15 +100,17 @@ public void run() {
     cuando se haga clic en ‘Stop’, todos los hilos de los galgos
     deberían dormirse, y cuando se haga clic en ‘Continue’ los mismos
     deberían despertarse y continuar con la carrera. Diseñe una solución que permita hacer esto utilizando los mecanismos de sincronización con las primitivas de los Locks provistos por el lenguaje (wait y notifyAll).
-##Programa pausado - stop()
+
+## Programa pausado - stop()
 
 ![](./img/parte3-3.jpg)
 
-##Programa reanudado - continue()
+## Programa reanudado - continue()
 
 ![](./img/parte3-3.1.jpg)
 
-###Salida
+### Salida
+
 ```java
         Carrera pausada!
         Carrera reanudada!
