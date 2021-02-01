@@ -40,10 +40,12 @@ public class Galgo extends Thread {
 			carril.finish();
 			estado=true;
 			int ubicacion;
+
 			synchronized (regl) {
 				ubicacion = regl.getUltimaPosicionAlcanzada();
 				regl.setUltimaPosicionAlcanzada(ubicacion + 1);
 			}
+
 			if (ubicacion==1){
 				regl.setGanador(this.getName());
 			}
